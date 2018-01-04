@@ -8,7 +8,7 @@ async function getObs() {
 			let obs = jsonData.STATION[0].OBSERVATIONS.snow_depth_value_1;
             		console.log(obs);
 		}
-	throw new Error('Request Failed!');
+	else throw new Error('Request Failed!');
 	} catch (error) {
 		console.log(error);
 	}
