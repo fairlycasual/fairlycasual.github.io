@@ -13,5 +13,7 @@ async function getObs() {
 	}
 }
 
+getObs();
+
 
 
