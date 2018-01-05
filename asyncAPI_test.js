@@ -10,7 +10,9 @@ async function getObs() {
 			let snowDepth = obs.value;
 			let timeStamp = obs.date_time;
                         let string = 'The snow depth at Heather Meadows is ' + snowDepth + ' inches at ' + timeStamp;
-		
+		       
+			console.log(string);
+			
 			var output = document.getElementById('output');
 			output.innerHTML = 'string';	
 		}
@@ -23,26 +25,3 @@ async function getObs() {
  
 getObs();
 
-obs.onload = function heatherMeadows() {
-	var snowDepth = obs['value'];
-	var timeStamp = obs['date_time'];
-	console.log(snowDepth);
-	console.log(timeStamp);
-
-	for (var i = 0; i < obs.length; i++) {
-		var myArticle = document.createElement('article');
-		var myPara1 = document.createElement('p');
-		var myPara2 = document.createElement('p');
-		
-
-		myPara1.textContent = 'Current Heather Meadows snow depth is ' + snowDepth;
-		myPara2.textContent = 'as of ' + timeStamp; 
-
-		myArticle.appendChild(myPara1);
-		myArticle.appendChild(myPara2);
-
-		section.appendChild(myArticle);
-		
-		}
-
-}
