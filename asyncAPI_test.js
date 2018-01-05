@@ -47,7 +47,7 @@ async function getObs() {
 
 
 			
-		}
+		
 	throw new Error('Request Failed!');
 	} catch (error) {
 		//console.log(error);
