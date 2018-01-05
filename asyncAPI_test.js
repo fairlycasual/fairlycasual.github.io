@@ -9,15 +9,16 @@ async function getObs() {
 			let obs = jsonData.STATION[0].OBSERVATIONS.snow_depth_value_1;
 			let snowDepth = obs.value;
 			let timeStamp = obs.date_time;
-            let string = 'The snow depth at Heather Meadows is ' + snowDepth + ' inches at ' + timeStamp;
+                        let string = 'The snow depth at Heather Meadows is ' + snowDepth + ' inches at ' + timeStamp;
+		
+			var output = document.getElementById('output');
+			output.innerHTML = 'string';	
 		}
 	throw new Error('Request Failed!');
 	} catch (error) {
 		//console.log(error);
 	}
- var output = document.getElementById('output');
 
- output.innerHTML = string;
 }
  
 getObs()
