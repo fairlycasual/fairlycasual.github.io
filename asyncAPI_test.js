@@ -17,7 +17,7 @@ async function getObs() {
 
 getObs();
 
-jsonData.onload = function heatherMeados(obs) {
+obs.onload = function heatherMeados(obs) {
 	var snowDepth = obs['value'];
 	var timeStamp = obs['date_time'];
 	console.log(snowDepth);
