@@ -11,7 +11,7 @@ async function getObs() {
 			let timeStamp = obs.date_time;
                         let string = 'The snow depth at Heather Meadows is ' + snowDepth + ' inches at ' + timeStamp;
 		       
-			console.log(string);
+			document.write(string);
 			
 			function populateTable(object) {
 		   	var obj = obs;
