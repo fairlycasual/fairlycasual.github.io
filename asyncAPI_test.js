@@ -11,7 +11,7 @@ async function getObs() {
 			let timeStamp = obs.date_time;
                         let string = 'The snow depth at Heather Meadows is ' + snowDepth + ' inches at ' + timeStamp;
 		       
-			document.write(string);
+			document.getElementById("about").innerHTML = string;
 			
 		}	
 	throw new Error('Request Failed!');
