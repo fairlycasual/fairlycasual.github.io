@@ -12,7 +12,7 @@ async function getObs() {
                         let string = 'The snow depth at Heather Meadows is ' + snowDepth + ' inches at ' + timeStamp;
 		       
 			console.log(string);
-			
+			$('#results').html(string);
 			var output = document.getElementById('output');
 			output.innerHTML = 'string';	
 		}
