@@ -10,7 +10,7 @@ async function getObs() {
 			let snowDepth = snowObs.value;
 			let timeStamp = snowObs.date_time;
 			let tempObs = jsonData.STATION[0].OBSERVATIONS.air_temp_value_1;
-                        let string = 'The snow depth at Heather Meadows is ' + snowDepth + ' inches at ' + timeStamp + '. ' + 'The current air temperature is ' + tempObs + ' degrees Fahrenheit.';
+                        let string = 'The snow depth at Heather Meadows is ' + snowDepth + ' inches as of ' + timeStamp + '. ' + 'The current air temperature is ' + tempObs + ' degrees Fahrenheit.';
 		       
 			document.getElementById("conditions").innerHTML = string;
 			
