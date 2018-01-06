@@ -14,6 +14,7 @@ async function getObs() {
                         let string = 'The snow depth at Heather Meadows is ' + snowDepth + ' inches as of ' + timeStamp + '. ' + 'The current air temperature is ' + airTemp + ' degrees Fahrenheit.' <br> 'Observations courtesy of the MesoWest API service.';
 		       
 			console.log(tempObs);
+			console.log(string);
 			document.getElementById("conditions").innerHTML = string;
 			
 		}	
