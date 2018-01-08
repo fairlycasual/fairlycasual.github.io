@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+
+ 	<style>
+   .jumbotron {
+    background-color: #f4511e; /* Orange */
+    color: #ffffff;
+    padding: 100px 25px;
+  }
+
+  .container-fluid {
+    padding: 60px 50px;
+  }
+
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .bg-3 {
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+
+  .navbar {
+    margin-bottom: 0;
+    background-color: #f4511e;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+  </style>
+
+ 	
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.8.10/themes/smoothness/jquery-ui.css" type="text/css">
+	<script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/jquery-ui.min.js"></script>
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	 <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script> 
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+ 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+ </head>
+ <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Will</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#portfolio">PORTFOLIO</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+
+<div class="jumbotron text-center">
+ 	<h1>Will Howard</h1>
+ 	<p>Specializing in the atmospheric sciences, web-development, and outdoor recreation.</p>
+ 	<form class="form-inline">
+ 		<div class="input-group">
+ 			<input type="email" class="form-control" size="50" placeholder="Email Address" required>
+ 			<div class="input-group-btn">
+ 				<button type="button" class="btn btn-danger">Subscribe</button>
+ 			</div>
+ 		</div>
+ 	</form>
+ </div>
+
+ <div class="container-fluid">
+ 	<div class="row">
+ 		<div class="col-sm-8">
+ 	<h2>About Me</h2>
+ 	<h4> A meteorlogist, a <strong>skier</strong>, and a beginner web-developer.</h4>
+ 	<p> I am proficient in Matlab, Python, and c-shell scripting. Currently working to become skilled in JavaScript and HTML. I am a Bachelor of Sciences in Atmospheric Sciences from the University of Utah. I specialize in Mountain Meteorology, Air Quality, and environmental instrumentation.</p>
+	<p id="conditions">MesoWest obs from Mt. Baker Ski Area should appear here.</p>
+	<p id="citation">Observations courtesy of the MesoWest API service</p>
+	  </div>
+	    <div class="col-sm-4">
+		<img src="../snoqualmiePow2.jpg" class="img-responsive" alt="Where did this photo go?">
+	    </div>
+    </div>
+</div>
+
+ <div class="container-fluid bg-grey">
+ 	<div class="row">
+ 		<div class="col-sm-4">
+ 			<img src="../lorenLone.jpg" class="img-responsive" alt="Where did this photo go?">
+ 		</div>
+ 	  <div class="col-sm-8">
+ 	    <h2>Where to find me?</h2>
+ 		<h4>Bellingham, WA. The slopes of Mount Baker, deep snow.</h4>
+ 	 	<p>Being an avid recreationalist I'm typically found in mountains, cliffs, and amongst the dirt; if none of those work you can knock on the door of my Sprinter van. Should my van be locked, and Wilbur or Andri aren't around, take a look out in the atmosphere...</p>
+ 	 	<div class="col-sm-4">
+ 	 		<img src="../buildmanMilk.jpg" class="img-responsive" alt="Where did this photo go?">
+ 	 	</div>	
+ 	  </div>
+ 	</div>
+ </div>
+
+ <div id="timeseries" class="container-fluid">
+ 	<h2>Obersvations Test</h2>
+ 	<p>Hopefully the timeseries plot I construct using plotly shows up here</p>
+ </div>
+
+
+ <div class="container-fluid text-center bg-grey">
+ 	<h2>Portfolio</h2>
+ 	<h4>A few things I have done</h4>
+ 	<div class="row text-center">
+ 		
+ 		<div class="col-sm-4">
+ 			<div class="thumbnail">
+ 				<img src="../badgerBuilt_SO3S.jpg" class="img-responsive" alt="There should be a photo here">
+ 				<p>Portable weather station deployed for the Great Salt Lake Summer Ozone Study, 2015.</p>
+ 			</div>
+ 		</div>
+
+ 		<div class="col-sm-4">
+ 			<div class="thumbnail">
+ 			 <img src="../lmrSunrise.jpg" class="img-responsive" alt="There should probably be one here too">
+ 			 <p>MesoWest station LMR during sunrise, at the Lakeside Mountain Army test range.</p>
+ 			</div>
+ 		</div>
+  
+        <div class="col-sm-4">
+        	<div class="thumbnail">
+        	<img src="../epoOuter.jpg" class="img-responsive" alt="There should probably be one here too">
+        	<p>Emigrant Pass Observatory station for MesoWest</p>
+            </div>
+        </div>
+    </div> 
+</div>
+
+<div class="container-fluid bg-grey">
+	<h2 class="text-center">CONTACT</h2>
+	<div class="row">
+		<div class="col-sm-5">
+			<p>Contact me and I'll get back to you as soon as I am able!</p>
+			<p><span class="glyphicon glyphicon-map-marker"></span> Bellingham, WA</p>
+			<p><span class="glyphicon glyphicon-phone"></span>(303) 570-6021</p>
+			<p><span class="glyphicon glyphicon-envelope"></span>willh91@msn.com</p>
+		</div>
+	</div>
+</div> 
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Lots of learning thanks to W3!</p>
+</footer>
+
+
+
+ 
+	 
+     <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script> 
+     <script type="text/javascript" src="../index.js"></script>
+     <script type="text/javascript" src="../asyncAPI_test.js"></script>
+	 
+ 
+ </body>
+</html>
