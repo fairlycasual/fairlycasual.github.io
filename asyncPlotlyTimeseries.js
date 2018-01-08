@@ -15,18 +15,36 @@ async function timeSeries() {
             var trace1 = {
             	x: timeStamp,
             	y: tempObs,
-            	type: 'scatter'
+            	type: 'scatter',
+            	mode: 'lines',
+            	name: 'Temp',
+            	name: 'Red',
+                line: {
+    			      color: 'rgb(219, 64, 82)',
+                      width: 2
+                      },
             }; 
 
             var trace2 = {
             	x: timeStamp,
             	y: dewPt,
-            	type: 'scatter'
+            	type: 'scatter',
+            	mode: 'lines',
+            	name: 'Dew Point',
+                line: {
+    			      color: 'rgb(55, 128, 191)',
+                      width: 2
+                      },
             }; 
+
+            var layout = {
+  							width: 500,
+  							height: 500
+						 };
 
             var data = [trace1, trace2];
 
-            Plotly.newPlot('timeseries', data);
+            Plotly.newPlot('timeseries', data, layout);
 
 		   
 		}
