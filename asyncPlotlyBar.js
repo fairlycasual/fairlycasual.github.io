@@ -28,16 +28,16 @@ async function getObs() {
             			    	size: 14,
             			    	color: 'rgb(107, 107, 107)'
             			    },
-            			    xaxis: {tickfont: {
-            			    	title: 'Date',
-            			    	size: 14,
-            			    	color: 'rgb(107, 107, 107)',
+            			    xaxis: {title: 'Date',
+					    tickfont: {
+            			    	       size: 14,
+            			    	       color: 'rgb(107, 107, 107)',
             			    }},
-            			    yaxis: {tickfont: {
-            			    	title: 'Snow Depth (Inches)',
-            			    	size: 14,
-            			    	color: 'rgb(107, 107, 107)'
-            			    }},
+            			    yaxis: {title: 'Snow Depth (Inches)',
+					    tickfont: {
+            			    	     size: 14,
+            			    	     color: 'rgb(107, 107, 107)'
+            			              }},
 
   							width: 1000,
   							height: 500,
