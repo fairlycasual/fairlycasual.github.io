@@ -46,7 +46,7 @@ async function timeSeries() {
             			    tickfont: {
             			    	size: 14,
             			    	color: 'rgb(107, 107, 107)'
-            			    }
+            			    },
             			    xaxis: {tickfont: {
             			    	title: 'Time',
             			    	size: 14,
