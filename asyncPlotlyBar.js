@@ -39,7 +39,7 @@ async function getObs() {
             			    	color: 'rgb(107, 107, 107)'
             			    }},
 
-  							width: 500,
+  							width: 1000,
   							height: 500,
 						 };
 
