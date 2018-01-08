@@ -38,7 +38,7 @@ async function timeSeries() {
             }; 
 
             var layout = {
-  							width: 500,
+  							width: 1000,
   							height: 500
 						 };
 
