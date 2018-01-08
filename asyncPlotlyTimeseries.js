@@ -37,9 +37,30 @@ async function timeSeries() {
             }; 
 
             var layout = {
-  							width: 1000,
-  							height: 500
-						 };
+            			    title: 'Temp & Dew Point Temp',
+            			    titlefont: {
+            			    	size: 16,
+            			    	color: 'rgb(107, 107, 107)'
+            			    },
+            			    tickfont: {
+            			    	size: 14,
+            			    	color: 'rgb(107, 107, 107)'
+            			    }
+            			    xaxis: {tickfont: {
+            			    	title: 'Time',
+            			    	size: 14,
+            			    	color: 'rgb(107, 107, 107)'
+            			    }},
+            			    yaxis: {tickfont: {
+            			    	title: 'Degrees C',
+            			    	size: 14,
+            			    	color: 'rgb(107, 107, 107)'
+            			    }},
+
+  							width: 500,
+  							height: 500,
+			};
+
 
             var data = [trace1, trace2];
 
