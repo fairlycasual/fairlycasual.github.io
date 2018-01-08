@@ -1,6 +1,6 @@
 async function getObs() {
 	try {
-		let response = await fetch('http://api.mesowest.net/v2/stations/timeseries?&stid=mtb42&recent=14400&token=7c19355e5a1d45d294ef3561d5852e93&vars=snow_depth&units=english');
+		let response = await fetch('https://api.mesowest.net/v2/stations/timeseries?&stid=mtb42&recent=14400&token=7c19355e5a1d45d294ef3561d5852e93&vars=snow_depth&units=english');
 		if (response.ok) {
 			let jsonData = await response.json();
 			//console.log(jsonData);
