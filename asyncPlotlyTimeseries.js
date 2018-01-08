@@ -18,6 +18,7 @@ async function timeSeries() {
             	type: 'scatter',
             	mode: 'lines',
             	name: 'Temp',
+            	name: 'Red',
                 line: {
     			      color: 'rgb(219, 64, 82)',
                       width: 2
@@ -59,8 +60,7 @@ async function timeSeries() {
 
   							width: 500,
   							height: 500,
-			};
-
+						 };
 
             var data = [trace1, trace2];
 

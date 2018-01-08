@@ -15,13 +15,34 @@ async function getObs() {
             	y: snowObs,
             	type: 'bar',
             }; 
-			
-		var layout = {
-  			      width: 1000,
-  			      height: 500
-                              };
 
            var data = [bar1];
+
+           var layout = {
+            			    title: 'Snow Depth',
+            			    titlefont: {
+            			    	size: 16,
+            			    	color: 'rgb(107, 107, 107)'
+            			    },
+            			    tickfont: {
+            			    	size: 14,
+            			    	color: 'rgb(107, 107, 107)'
+            			    },
+            			    xaxis: {tickfont: {
+            			    	title: 'Date',
+            			    	size: 14,
+            			    	color: 'rgb(107, 107, 107)',
+            			    }},
+            			    yaxis: {tickfont: {
+            			    	title: 'Inches',
+            			    	size: 14,
+            			    	color: 'rgb(107, 107, 107)'
+            			    }},
+
+  							width: 500,
+  							height: 500,
+						 };
+
 
             Plotly.newPlot('snowdepth', data, layout);
 		}
