@@ -15,10 +15,15 @@ async function getObs() {
             	y: snowObs,
             	type: 'bar',
             }; 
+			
+		var layout = {
+  			      width: 1000,
+  			      height: 500
+                              };
 
            var data = [bar1];
 
-            Plotly.newPlot('snowdepth', data);
+            Plotly.newPlot('snowdepth', data, layout);
 		}
 	throw new Error('Request Failed!');
 	} catch (error) {
