@@ -51,8 +51,8 @@ async function timeSeries() {
             			    	    size: 14,
             			    	    color: 'rgb(107, 107, 107)'
             			    }},
-            			    yaxis: {tickfont: {
-            			    	title: 'Degrees C',
+            			    yaxis: {title: 'Degrees C',
+					    tickfont: {
             			    	size: 14,
             			    	color: 'rgb(107, 107, 107)'
             			    }},
