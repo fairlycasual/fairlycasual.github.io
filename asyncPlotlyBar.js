@@ -34,7 +34,7 @@ async function getObs() {
             			    	color: 'rgb(107, 107, 107)',
             			    }},
             			    yaxis: {tickfont: {
-            			    	title: 'Inches',
+            			    	title: 'Snow Depth (Inches)',
             			    	size: 14,
             			    	color: 'rgb(107, 107, 107)'
             			    }},
