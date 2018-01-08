@@ -1,1 +1,1 @@
-alert("This is an alert I created in index.js!");
+alert("Welcome! This page is an experiment, please alert me if anything breaks.");
