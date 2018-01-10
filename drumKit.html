@@ -61,7 +61,8 @@
  	console.log(e);
 	const audio = document.querySelector(`audio[data-key"${e.keyCode}"]`);
 	if(!audio) return; //stop function from runnin
- 	console.log(audio);
+ 	
+	audio.play();
  })
 
 </script>
