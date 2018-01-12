@@ -1,6 +1,6 @@
 async function timeSeries() {
 	try {
-		let response = await fetch('https://api.mesowest.net/v2/stations/timeseries?&stid=mtb42&recent=1440&token=7c19355e5a1d45d294ef3561d5852e93&vars=air_temp,dew_point_temperature');
+		let response = await fetch('https://api.mesowest.net/v2/stations/timeseries?&stid=mtb42&recent=2880&token=7c19355e5a1d45d294ef3561d5852e93&vars=air_temp,dew_point_temperature');
 		if (response.ok) {
 			let jsonData = await response.json();
 			//console.log(jsonData);
