@@ -33,13 +33,13 @@ async function climatology() {
             			    	size: 14,
             			    	color: 'rgb(107, 107, 107)'
             			    },
-            			    xaxis: {title: 'Time',
+            			    xaxis: {title: 'Year',
 					    tickfont: {
             			    	    size: 14,
 					    color: 'rgb(107, 107, 107)'
             			            }
 				     },
-            			    yaxis: {title: 'Degrees C',
+            			    yaxis: {title: 'Snow Depth',
 					    tickfont: {
             			    	    size: 14,
 					    color: 'rgb(107, 107, 107)'
