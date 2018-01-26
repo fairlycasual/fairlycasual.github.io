@@ -1,6 +1,6 @@
 async function climatology() {
 	try {
-		let response = await fetch('http://api.mesowest.net/v2/stations/climatology?&stid=mtb42&startclim=01250000&endclim=01260000&radius=mtb42,15&token=7c19355e5a1d45d294ef3561d5852e93&units=english&vars=snow_depth');
+		let response = await fetch('https://api.mesowest.net/v2/stations/climatology?&stid=mtb42&startclim=01250000&endclim=01260000&radius=mtb42,15&token=7c19355e5a1d45d294ef3561d5852e93&units=english&vars=snow_depth');
 		if (response.ok) {
 			let jsonData = await response.json();
 			console.log(jsonData);
