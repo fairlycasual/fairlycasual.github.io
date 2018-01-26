@@ -49,7 +49,7 @@ async function climatology() {
             			    	title: 'Time',
             			    	size: 14,
             			    	color: 'rgb(107, 107, 107)'
-            			    }},
+            			    },
             			    yaxis: {tickfont: {
             			    	title: 'Degrees C',
             			    	size: 14,
