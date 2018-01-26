@@ -9,3 +9,8 @@ async function climatology() {
             console.log(snowObs);
 	}
 }
+		throw new Error('Request Failed!');
+	} catch (error) {
+		//console.log(error);
+	}
+}
