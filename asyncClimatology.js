@@ -43,9 +43,9 @@ async function climatology() {
             			    	    size: 14,
 					    color: 'rgb(107, 107, 107)'
             			            }
-            			     }
 				    width: 500,
   				    height: 500
+			           };
 			};
 
             var data = [trace1];
