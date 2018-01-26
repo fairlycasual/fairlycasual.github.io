@@ -10,7 +10,9 @@ async function climatology() {
 	}
 }
 		throw new Error('Request Failed!');
-	} catch (error) {
+	catch (error) {
 		//console.log(error);
 	}
 }
+
+climatology()
