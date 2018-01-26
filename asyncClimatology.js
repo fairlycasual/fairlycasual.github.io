@@ -59,8 +59,10 @@ async function climatology() {
             var data = [trace1];
 
             Plotly.newPlot('climatology', data, layout);
-	} } catch (error) { 
+	} catch (error) { 
 	       }
-  	      
+	}
+	
+}
 
 climatology()
