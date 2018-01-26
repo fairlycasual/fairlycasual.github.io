@@ -3,11 +3,11 @@ async function climatology() {
 		let response = await fetch('http://api.mesowest.net/v2/stations/climatology?&stid=mtb42&startclim=01250000&endclim=01260000&radius=mtb42,15&token=7c19355e5a1d45d294ef3561d5852e93&units=english&vars=snow_depth');
 		if (response.ok) {
 			let jsonData = await response.json();
-			//console.log(jsonData);
-            let timeStamp = jsonData.STATION[0].OBSERVATIONS.date_time;
-            //console.log(timeStamp);
-            let snowDepth = jsonData.STATION[0].OBSERVATIONS.snow_depth_set_1;
-            console.log(snowDepth);
+			console.log(jsonData);
+            		let timeStamp = jsonData.STATION[0].OBSERVATIONS.date_time;
+           		 //console.log(timeStamp);
+            		let snowDepth = jsonData.STATION[0].OBSERVATIONS.snow_depth_set_1;
+            		console.log(snowDepth);
 
 
             var trace1 = {
@@ -44,7 +44,7 @@ async function climatology() {
             			    tickfont: {
             			    	size: 14,
             			    	color: 'rgb(107, 107, 107)'
-            			    }
+            			    },
             			    xaxis: {tickfont: {
             			    	title: 'Time',
             			    	size: 14,
@@ -56,11 +56,11 @@ async function climatology() {
             			    	color: 'rgb(107, 107, 107)'
             			    }},
 
-  							width: 500,
-  							height: 500,
+  				    width: 500,
+  				    height: 500,
 						 };
 
-            var data = [trace1, trace2];
+            var data = [trace1];
 
             Plotly.newPlot('climatology', data, layout);
 
