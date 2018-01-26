@@ -15,25 +15,12 @@ async function climatology() {
             		y: snowDepth,
             		type: 'scatter',
             		mode: 'lines',
-            		name: 'Temp',
-            		name: 'blue',
-               		 line: {
+            		name: 'Snow Depth',
+               		line: {
     			      color: 'rgb(219, 64, 82)',
-                      		width: 2
-                      		}
+                      	      width: 2
+                      	      }
             		}; 
-
-            // var trace2 = {
-            // 	x: timeStamp,
-            // 	y: dewPt,
-            // 	type: 'scatter',
-            // 	mode: 'lines',
-            // 	name: 'Dew Point',
-            //     line: {
-    			     //  color: 'rgb(55, 128, 191)',
-            //           width: 2
-            //           },
-            // }; 
 
             		var layout = {
             			    title: '10-Year daily snow depth',
@@ -45,24 +32,30 @@ async function climatology() {
             			    	size: 14,
             			    	color: 'rgb(107, 107, 107)'
             			    },
-            			    xaxis: {tickfont: {
-            			    	title: 'Time',
-            			    }},
-            			    yaxis: {tickfont: {
-            			    	title: 'Degrees C',
-            			    }},
-
-  				    width: 500,
+            			    xaxis: {title: 'Time',
+					    tickfont: {
+            			    	    size: 14,
+					    color: 'rgb(107, 107, 107)'
+            			            }
+				     },
+            			    yaxis: {title: 'Degrees C',
+					    tickfont: {
+            			    	    size: 14,
+					    color: 'rgb(107, 107, 107)'
+            			            }
+            			     }
+				    width: 500,
   				    height: 500
-						 };
+			};
 
             var data = [trace1];
-
-            Plotly.newPlot('climatology', data, layout);
+	    Plotly.newPlot('climatology', data, layout);
+	
+		}
+	throw new Error('Request Failed!');
 	} catch (error) { 
 	       }
-	}
-	
 }
+	
 
 climatology()
