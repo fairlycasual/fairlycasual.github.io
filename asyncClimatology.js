@@ -39,21 +39,17 @@ async function climatology() {
             			    title: '10-Year daily snow depth',
             			    titlefont: {
             			    	size: 16,
-            			    	color: 'rgb(107, 107, 107)'
+            			    	color: 'rgb(107, 107, 107)',
             			    },
             			    tickfont: {
             			    	size: 14,
-            			    	color: 'rgb(107, 107, 107)'
+            			    	color: 'rgb(107, 107, 107)',
             			    },
             			    xaxis: {tickfont: {
             			    	title: 'Time',
-            			    	size: 14,
-            			    	color: 'rgb(107, 107, 107)'
-            			    },
+            			    }},
             			    yaxis: {tickfont: {
             			    	title: 'Degrees C',
-            			    	size: 14,
-            			    	color: 'rgb(107, 107, 107)'
             			    }},
 
   				    width: 500,
@@ -63,9 +59,7 @@ async function climatology() {
             var data = [trace1];
 
             Plotly.newPlot('climatology', data, layout);
-
-		   
-		}
+	}
 	throw new Error('Request Failed!');
 	} catch (error) {
 		//console.log(error);
