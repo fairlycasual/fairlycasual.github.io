@@ -20,7 +20,7 @@ async function climatology() {
                		 line: {
     			      color: 'rgb(219, 64, 82)',
                       		width: 2
-                      		},
+                      		}
             		}; 
 
             // var trace2 = {
@@ -35,15 +35,15 @@ async function climatology() {
             //           },
             // }; 
 
-            var layout = {
+            		var layout = {
             			    title: '10-Year daily snow depth',
             			    titlefont: {
             			    	size: 16,
-            			    	color: 'rgb(107, 107, 107)',
+            			    	color: 'rgb(107, 107, 107)'
             			    },
             			    tickfont: {
             			    	size: 14,
-            			    	color: 'rgb(107, 107, 107)',
+            			    	color: 'rgb(107, 107, 107)'
             			    },
             			    xaxis: {tickfont: {
             			    	title: 'Time',
@@ -53,7 +53,7 @@ async function climatology() {
             			    }},
 
   				    width: 500,
-  				    height: 500,
+  				    height: 500
 						 };
 
             var data = [trace1];
