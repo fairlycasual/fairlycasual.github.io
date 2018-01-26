@@ -10,18 +10,18 @@ async function climatology() {
             		console.log(snowDepth);
 
 
-            var trace1 = {
-            	x: timeStamp,
-            	y: snowDepth,
-            	type: 'scatter',
-            	mode: 'lines',
-            	name: 'Temp',
-            	name: 'blue',
-                line: {
+            		var trace1 = {
+            		x: timeStamp,
+            		y: snowDepth,
+            		type: 'scatter',
+            		mode: 'lines',
+            		name: 'Temp',
+            		name: 'blue',
+               		 line: {
     			      color: 'rgb(219, 64, 82)',
-                      width: 2
-                      },
-            }; 
+                      		width: 2
+                      		},
+            		}; 
 
             // var trace2 = {
             // 	x: timeStamp,
@@ -59,11 +59,11 @@ async function climatology() {
             var data = [trace1];
 
             Plotly.newPlot('climatology', data, layout);
-	}
-	throw new Error('Request Failed!');
-	} catch (error) {
-		//console.log(error);
-	}
-  }
+	} else { throw new Error('Request Failed!');
+		catch (error) {
+		console.log(error);
+		}
+	       }
+  	      }
 
 climatology()
