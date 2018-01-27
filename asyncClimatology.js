@@ -5,9 +5,9 @@ async function climatology() {
 		if (response.ok) {
 			let jsonData = await response.json();
 			console.log(jsonData);
-            		let timeStamp = jsonData.STATION[0].OBSERVATIONS.date_time;
+            		let timeStamp = jsonData.STATION[1].OBSERVATIONS.date_time;
            		 //console.log(timeStamp);
-            		let snowDepth = jsonData.STATION[0].OBSERVATIONS.snow_depth_set_1;
+            		let snowDepth = jsonData.STATION[1].OBSERVATIONS.snow_depth_set_1;
             		console.log(snowDepth);
 
 
