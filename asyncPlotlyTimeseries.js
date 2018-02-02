@@ -46,7 +46,7 @@ async function timeSeries() {
             			    	size: 14,
             			    	color: 'rgb(107, 107, 107)'
             			    },
-            			    xaxis: {title: 'Time (UTC)',
+            			    xaxis: {title: 'Time (PST)',
 					    tickfont: {
             			    	    size: 14,
             			    	    color: 'rgb(107, 107, 107)'
